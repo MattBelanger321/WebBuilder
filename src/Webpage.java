@@ -1,4 +1,3 @@
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -40,14 +39,14 @@ public class Webpage implements Global {
         tabs = tabs.substring(0,tabs.lastIndexOf("\t"));
         pw.println(tabs+"</style>");
         tabs = tabs.substring(0,tabs.lastIndexOf("\t"));
-        pw.println("</head>");
-        pw.println("<body>");
+        pw.println(tabs+"</head>");
+        pw.println(tabs+"<body>");
         tabs += "\t";
-        pw.printf("<h1>MADE BY WEBSITE BUILDER %.1f</h1>\n",VERSION);
+        pw.printf(tabs+"<h1>MADE BY WEBSITE BUILDER %.1f</h1>\n",VERSION);
         tabs = tabs.substring(0,tabs.lastIndexOf("\t"));
-        pw.println("</body>");
+        pw.println(tabs+"</body>");
         tabs = tabs.substring(0,tabs.lastIndexOf("\t"));
-        pw.println("<html>");
+        pw.println(tabs+"<html>");
         pw.close();
     }
 

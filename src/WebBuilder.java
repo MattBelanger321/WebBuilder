@@ -6,11 +6,8 @@
 */
 import java.util.Scanner;
 public class WebBuilder implements Global{
-
-
     public static void main(String[] args) {
         System.out.printf("_____/** WELCOME TO WEB BUILDER %.1f **\\_____\n",VERSION);
-
         System.out.printf("                   **\n                   **\n                   **\n                   **\n                   **\n");
         start();
     }
